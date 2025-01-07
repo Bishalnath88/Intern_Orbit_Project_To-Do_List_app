@@ -62,8 +62,22 @@ h1 {
     padding: 12px;
     margin-bottom: 8px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+#task-list li .task-text {
+    flex: 1;
+}
+
+#task-list li .button-container {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+#task-list li.completed .task-text {
+    text-decoration: line-through;
+    color: #dc2626;
 }
 
 .remove-task-button {
@@ -78,4 +92,30 @@ h1 {
 
 .remove-task-button:hover {
     background-color: #ef4444;
+}
+
+.complete-task-button {
+    background-color: transparent;
+    border: 2px solid #10b981;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 10px;
+}
+
+/* .complete-task-button:hover {
+    background-color: #10b981;
+    color: white;
+} */
+
+#task-list li.completed .complete-task-button {
+    background-color: #10b981;
+    color: white;
 }
