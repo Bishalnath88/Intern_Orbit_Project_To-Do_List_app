@@ -110,11 +110,6 @@ h1 {
     margin-right: 10px;
 }
 
-/* .complete-task-button:hover {
-    background-color: #10b981;
-    color: white;
-} */
-
 #task-list li.completed .complete-task-button {
     background-color: #10b981;
     color: white;
